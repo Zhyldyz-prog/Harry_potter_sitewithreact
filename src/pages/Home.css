@@ -1,0 +1,46 @@
+.home {
+  height: 100vh;
+  background-image: url("https://m.media-amazon.com/images/S/pv-target-images/3cf43f7cc761bfbeb91ce3b787338f9685e58d564b7131fd431740493cb1db2b._SX1080_FMjpg_.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.home-overlay {
+  height: 100%;
+  background: rgba(10, 8, 5, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.home-overlay h1 {
+  font-size: 48px;
+  color: #d4af37;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.home-overlay p {
+  max-width: 600px;
+  font-size: 18px;
+  color: #e6e1d5;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.home-btn {
+  padding: 12px 30px;
+  background: #d4af37;
+  color: #0b0b0b;
+  font-size: 18px;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.home-btn:hover {
+  background: #f1d77a;
+}
