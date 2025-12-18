@@ -1,10 +1,19 @@
 import { useParams, Link } from "react-router-dom";
-import { books } from "../data/books";
+import { useEffect, useState } from "react";
 import "./Books.css";
 
 export default function BookDetail() {
   const { id } = useParams();
-  const book = books.find((b) => b.id === Number(id));
+  const [book, setBook] = useState(null);
+
+  useEffect(() => {
+    fetch("/books.json")
+      .then(res => res.json())
+      .then(data => {
+        const found = data.find(b => b.id === Number(id));
+        setBook(found);
+      });
+  }, [id]);
 
   if (!book) return <h2>Book not found</h2>;
 

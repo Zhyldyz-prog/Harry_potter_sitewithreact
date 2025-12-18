@@ -5,13 +5,15 @@ export default function Header() {
   return (
     <header className="header">
       <div className="logo">
-        <span>Wizard</span>Books
+        <span>Wizard</span>  Books
       </div>
 
       <nav className="nav">
         <Link to="/">Home</Link>
         <Link to="/books">Books</Link>
         <Link to="/about">About</Link>
+        <Link to = '/register'>Sing in</Link>
+        <Link to = '/login'>Log in</Link>
       </nav>
     </header>
   );
